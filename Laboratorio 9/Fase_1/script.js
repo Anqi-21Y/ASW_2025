@@ -1,5 +1,5 @@
 // obtener btn
-const boton = document.getElementById("btn_mult");
+const boton = document.getElementById("btn_multi");
 
 // define un funcio 
 function primeroFuncion (){

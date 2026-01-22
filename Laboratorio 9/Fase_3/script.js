@@ -1,7 +1,8 @@
 const textarea = document.getElementById("text_area");
 
 //reagisrtar el evento keydown en el textaea
-textarea.addEventListener("keydown", function(e){
+
+function noNumbers(e) {
 
     //condicional
     if(e.key >= "0" && e.key <= "9"){
@@ -11,4 +12,6 @@ textarea.addEventListener("keydown", function(e){
         // mostrar mensaje de alert
         alert("Error : no se permiten numeros en este campo");
     }
-});
+};
+
+textarea.addEventListener("keydown", noNumbers);
